@@ -1,4 +1,4 @@
-# local-ai
+# forge
 
 - Hardware: Apple M6 (base), 24 GB unified memory, ~35 GB free disk. Keep model downloads lean; check `df -h /` before pulling.
 - For speed work, use the `inference-optimisation` skill and keep its layout in `experiments/<model>/`.

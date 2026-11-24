@@ -1,4 +1,4 @@
-# local-ai
+# forge
 
 Running and speeding up local LLMs on this Mac (Apple M6, 24 GB unified memory, macOS 27.2).
 
