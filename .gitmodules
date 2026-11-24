@@ -1,4 +1,4 @@
 [submodule "engine/atomic-engine"]
 	path = engine/atomic-engine
-	url = https://github.com/AtomicBot-ai/atomic-engine.git
+	url = https://github.com/xddinside/atomic-engine.git
 	branch = engine-development
