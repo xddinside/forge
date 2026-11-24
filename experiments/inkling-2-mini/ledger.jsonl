@@ -1,0 +1,1 @@
+{"name": "budget14-q4k-c4k", "time": "2026-11-24T14:54:25", "ttft_short_ms": 766.1, "c1_decode": 17.55, "c1_all": [16.69, 17.96, 18.08, 18.09, 16.7, 17.15], "prefill_3000": 128.9, "prefill_3000_tokens": 2421, "ok": true, "mem_peak_gib": 19.95, "flags": []}

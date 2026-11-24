@@ -1,0 +1,30 @@
+{
+ "base_url": "http://127.0.0.1:8080",
+ "model": "inkling-2-mini",
+ "health_timeout_s": 600,
+ "concurrency": 1,
+ "prefill_lengths": [
+  3000
+ ],
+ "temperature": 1.0,
+ "extra_body": {
+  "top_p": 1.0,
+  "top_k": 0,
+  "min_p": 0.0
+ },
+ "stop": [
+  "bash",
+  "../../tools/stop.sh"
+ ],
+ "memory": {
+  "cap_gib": 21.5,
+  "probe": [
+   "bash",
+   "../../tools/mem.sh"
+  ],
+  "interval_s": 3
+ },
+ "require_ac": true,
+ "name": "budget14-q4k-c4k",
+ "notes": "already-running server: AD-Q4_K --engine-budget-mib 14436 -c 4096 -ub 256 -ctk/ctv q4_0 -fa on -t 6, no draft"
+}

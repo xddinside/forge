@@ -1,0 +1,78 @@
+{
+ "base_url": "http://127.0.0.1:8080",
+ "model": "inkling-2-mini",
+ "health_timeout_s": 600,
+ "concurrency": 1,
+ "prefill_lengths": [
+  3000
+ ],
+ "temperature": 1.0,
+ "extra_body": {
+  "top_p": 1.0,
+  "top_k": 0,
+  "min_p": 0.0
+ },
+ "stop": [
+  "bash",
+  "../../tools/stop.sh"
+ ],
+ "memory": {
+  "cap_gib": 21.5,
+  "probe": [
+   "bash",
+   "../../tools/mem.sh"
+  ],
+  "interval_s": 3
+ },
+ "require_ac": true,
+ "name": "b14-ds1",
+ "launch": [
+  "bash",
+  "../../tools/serve.sh",
+  "-m",
+  "/Users/xdd/forge/models/inkling-2-mini/Inkling-2-Mini-AD-Q4_K.gguf",
+  "--engine-budget-mib",
+  "14436",
+  "-fit",
+  "off",
+  "-c",
+  "4096",
+  "-b",
+  "1024",
+  "-ub",
+  "256",
+  "-np",
+  "1",
+  "-fa",
+  "on",
+  "-ctk",
+  "q4_0",
+  "-ctv",
+  "q4_0",
+  "-ngl",
+  "all",
+  "-t",
+  "6",
+  "-tb",
+  "6",
+  "--cache-ram",
+  "0",
+  "--ctx-checkpoints",
+  "0",
+  "--jinja",
+  "--no-warmup",
+  "--metrics",
+  "-md",
+  "/Users/xdd/forge/models/inkling-2-mini/dspark-Inkling-2-Mini-Q8_0.gguf",
+  "--spec-type",
+  "draft-dspark",
+  "-ngld",
+  "99",
+  "-ctkd",
+  "q4_0",
+  "-ctvd",
+  "q4_0",
+  "--spec-draft-n-max",
+  "1"
+ ]
+}

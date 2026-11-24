@@ -5,3 +5,5 @@ build*/
 .work/
 experiments/**/runs-*.log
 .DS_Store
+.venv/
+.run/

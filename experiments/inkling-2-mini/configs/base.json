@@ -1,0 +1,47 @@
+{
+ "base_url": "http://127.0.0.1:8080",
+ "model": "inkling-2-mini",
+ "health_timeout_s": 600,
+ "concurrency": 2,
+ "prefill_lengths": [
+  4096,
+  16384
+ ],
+ "temperature": 1.0,
+ "extra_body": {
+  "top_p": 1.0,
+  "top_k": 0,
+  "min_p": 0.0
+ },
+ "stop": [
+  "bash",
+  "../../tools/stop.sh"
+ ],
+ "memory": {
+  "cap_gib": 19,
+  "probe": [
+   "bash",
+   "../../tools/mem.sh"
+  ],
+  "interval_s": 3
+ },
+ "require_ac": true,
+ "name": "base",
+ "launch": [
+  "bash",
+  "../../tools/serve.sh",
+  "-m",
+  "/Users/xdd/forge/models/inkling-2-mini/Inkling-2-Mini-AD-Q4_K.gguf",
+  "-c",
+  "32768",
+  "-ngl",
+  "all",
+  "-fa",
+  "on",
+  "-np",
+  "2",
+  "--jinja",
+  "--no-warmup",
+  "--metrics"
+ ]
+}
