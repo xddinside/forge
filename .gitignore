@@ -1,0 +1,7 @@
+models/
+*.gguf
+*.safetensors
+build*/
+.work/
+experiments/**/runs-*.log
+.DS_Store
