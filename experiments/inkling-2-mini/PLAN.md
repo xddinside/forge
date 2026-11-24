@@ -12,3 +12,6 @@ Source: engine/atomic-engine/docs/atomic-engine-inkling-m4-max-comparison.png
 
 ## Log
 - 2026-11-24: repo created; skill installed; Atomic Engine submodule @ fb69fff. No runs yet.
+- 2026-11-24: engine built @ fb69fff (build 12625, Metal, static). Weights in models/inkling-2-mini:
+  AtomicChat/Inkling-2-Mini-GGUF @ 309509848b3151419aa26d069eb03db57fd29a00 (AD-Q4_K 16,525,559,776 B; dspark Q8_0; mmproj F16)
+  AtomicChat/Inkling-2-Mini-Uncensored-GGUF @ 40886ab636cabb4decf4998224f790b462ab048e (LoRA 43,805,184 B)
